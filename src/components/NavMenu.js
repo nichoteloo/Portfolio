@@ -10,7 +10,7 @@ const NavMenuStyles = styled.div`
   left: 0;
   width: 100%;
   padding: 1rem 0;
-  background: var(--dark-bg);
+  background: var(--blue-bg);
   ul {
     max-width: 1200px;
     margin: 0 auto;
@@ -21,7 +21,7 @@ const NavMenuStyles = styled.div`
       border-radius: 7px;
       transition: 0.3s ease background-color;
       &:hover {
-        background-color: var(--deep-dark);
+        background-color: var(--deep-blue);
       }
     }
     a {
@@ -29,7 +29,7 @@ const NavMenuStyles = styled.div`
       font-family: 'RobotoMono Regular';
       padding: 1rem 2rem;
       font-size: 2rem;
-      color: var(--gray-1);
+      color: var(--shades-blue-1);
       outline: none;
     }
     .active {
@@ -62,10 +62,10 @@ const NavMenuStyles = styled.div`
     .navItems {
       --top: 1rem;
       transition: 0.3s ease transform;
-      background-color: var(--deep-dark);
+      background-color: var(--deep-blue);
       padding: 2rem;
-      width: 90%;
-      max-width: 300px;
+      width: 40%;
+      max-width: 200px;
       position: absolute;
       right: 1rem;
       border-radius: 12px;
@@ -135,7 +135,7 @@ export default function NavMenu() {
         </li>
         <li>
           <NavLink
-            to="/project"
+            to="/projects"
             onClick={() => setShowNav(!showNav)}
             role="button"
             onKeyDown={() => setShowNav(!showNav)}

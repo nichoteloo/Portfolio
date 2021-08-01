@@ -1,0 +1,167 @@
+{
+  "main": {
+    "name": "NICOLAS C.",
+    "occupation": "Software Developer",
+    "image": "image.jpg",
+    "bio": "Hello, I'm Nicolas",
+    "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
+    "resumeDownload": "#",
+    "social": [
+      {
+        "name": "linkedin",
+        "url": "#",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "github",
+        "url": "#",
+        "className": "fa fa-github"
+      },
+      {
+        "name": "email",
+        "url": "#",
+        "className": "fa fa-envelope-o"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage1": "Front End Proficiencies",
+    "skillmessage2": "Back End Proficiencies",
+    "skillmessage3": "DevOps/Other Applications ",
+    "education": [
+      {
+        "school": "UC Berkeley Extension",
+        "degree": "Full Stack Web Development Certificate",
+        "graduated": "August 2020"
+      },
+      {
+        "school": "San Francisco State University",
+        "degree": "Bachelor's of Science in Business Administration and Management",
+        "graduated": "May 2017"
+      },
+      {
+        "school": "Los Medanos College",
+        "degree": "Associate's of Science in Business Administration, Associate's of Science in Liberal Arts Biological and Social Science, Associate's of Science in Liberal Arts in Math and Science, Associate's of Arts in Arts and Humanities",
+        "graduated": "May 2014"
+      }
+    ],
+    "work": [
+      {
+        "company": "Belcampo Meat Co.",
+        "title": "Data Recording Analyst/Operations Coordinator",
+        "years": "March 2019 - April 2020",
+        "description": "Focused on operations and digital marketing of the business. Oversaw e-commerce/third-party delivery services, website, and mail marketing. Managed IT services, POS systems for restaurants, and loyalty reward applications."
+      },
+      {
+        "company": "Ulta Beauty",
+        "title": "Retail Sales Manager",
+        "years": "January 2019 - March 2019",
+        "description": "Promoted from Lancome Counter Manager and became the Retail Sales Manager. Managed the team of cashiers, maintained sales goals for mass cosmetics, and ran the cash wrap"
+      }
+    ],
+    "certificates": [
+      {
+        "title": "UC Berkeley",
+        "image": "ucbkproof.png",
+        "description": "Completion of Coding Bootcamp"
+      },
+      {
+        "title": "HTML",
+        "image": "codeacademy-html.png",
+        "description": "Certificate in HTML from Code Academy"
+      },
+      {
+        "title": "Bootstrap",
+        "image": "codeacademy-bootstrap.png",
+        "description": "Certificate in Bootstrap from Code Academy"
+      },
+      {
+        "title": "Responsive Web Design",
+        "image": "codeacademy-responsive.png",
+        "description": "Certificate in Responsive Web Design from Code Academy"
+      }
+    ],
+    "skills": [
+      {
+        "name": "HTML",
+        "level": "90%"
+      },
+      {
+        "name": "CSS",
+        "level": "90%"
+      },
+      {
+        "name": "JAVASCRIPT",
+        "level": "70%"
+      },
+      {
+        "name": "REACT",
+        "level": "60%"
+      },
+      {
+        "name": "MYSQL",
+        "level": "80%"
+      },
+      {
+        "name": "MONGOBD",
+        "level": "80%"
+      },
+      {
+        "name": "NODE",
+        "level": "80%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "id": 1,
+        "title": "Movie Search App",
+        "category": "Search a movie from the MovieDB API using JavaScript, React, React-Router, HTML, and CSS.",
+        "image": "movieapp.png",
+        "url": "https://nicolewallace09.github.io/react-movie-app/",
+        "github": "https://github.com/nicolewallace09/react-movie-app"
+      },
+      {
+        "id": 2,
+        "title": "Student profiles",
+        "category": "Search for students from an API and have the ability to view their information and add tags.",
+        "image": "student.png",
+        "url": "https://nicolewallace09.github.io/student-profiles/",
+        "github": "https://github.com/nicolewallace09/student-profiles"
+      },
+      {
+        "id": 3,
+        "title": "Shopify Challenge",
+        "category": "Save movie nominations from the OMDB API using JavaScript, React, React-Router, HTML, CSS, and Local Storage.",
+        "image": "shoppies.png",
+        "url": "https://nicolewallace09.github.io/the-shoppies/",
+        "github": "https://github.com/nicolewallace09/the-shoppies"
+      },
+      {
+        "id": 4,
+        "title": "Travel Planner",
+        "category": "A Travel Planner using JavaScript, jQuery, MateralizeCSS, CSS, HTML, and Local Storage, and HoteLook/SkyScanner APIs.",
+        "image": "travelplanner.png",
+        "url": "https://nicolewallace09.github.io/travel-planner/",
+        "github": "https://github.com/nicolewallace09/travel-planner"
+      },
+      {
+        "id": 5,
+        "title": "Techly",
+        "category": "CMS-style social networking site using MySql (Sequelize), Passport, Handlebars,js, Express.js, JavaScript, HTML, CSS and MVC paradigm.",
+        "image": "techlyapp.png",
+        "url": "https://techly.herokuapp.com/",
+        "github": "https://github.com/nicolewallace09/techly"
+      },
+      {
+        "id": 6,
+        "title": "Team Profile Generator",
+        "category": "A back end app to generate your team profile using Node, Inquirer, and Node Filesystem. (No deployed website)",
+        "image": "teamprofile.png",
+        "url": "https://github.com/nicolewallace09/team-profile-generator",
+        "github": "https://github.com/nicolewallace09/team-profile-generator"
+      }
+    ]
+  }
+}
