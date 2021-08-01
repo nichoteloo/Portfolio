@@ -9,17 +9,17 @@
     "social": [
       {
         "name": "linkedin",
-        "url": "#",
+        "url": "https://www.youtube.com/",
         "className": "fa fa-linkedin"
       },
       {
         "name": "github",
-        "url": "#",
+        "url": "https://www.youtube.com/",
         "className": "fa fa-github"
       },
       {
         "name": "email",
-        "url": "#",
+        "url": "https://www.youtube.com/",
         "className": "fa fa-envelope-o"
       }
     ]

@@ -64,7 +64,7 @@ const NavMenuStyles = styled.div`
       transition: 0.3s ease transform;
       background-color: var(--deep-blue);
       padding: 2rem;
-      width: 40%;
+      width: 60%;
       max-width: 200px;
       position: absolute;
       right: 1rem;

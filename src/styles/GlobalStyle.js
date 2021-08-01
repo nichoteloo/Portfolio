@@ -42,15 +42,15 @@ const GlobalStyles = createGlobalStyle`
   [data-scrollbar] {
     height: 100vh;
     overflow: hidden;
-    background-color: var(--shades-blue-1);
+    background-color: var(--white);
     .scroll-content {
-      background-color: var(--blue-bg);
+      background-color: var(--white);
     }
     .scrollbar-track.scrollbar-track-y {
       z-index: 101;
       background: var(--deep-blue);
       .scrollbar-thumb-y {
-        background: var(--shades-blue-1);
+        background: var(--white);
       }
     }
   }
