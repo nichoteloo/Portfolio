@@ -85,7 +85,7 @@ const HomeSectionStyles = styled.div`
       position: absolute;
       bottom: 350px;
       display: block;
-      left: 47%;
+      left: 44%;
       height: 40px;
       width: 40px;
 
@@ -102,9 +102,7 @@ export default function HomeSection({ name = data.main.name }) {
     <HomeSectionStyles>
       <header id="home">
         <div className="row banner">
-          <div className="twelve columns">
-            <img className="profile-pic" src={image} alt="Profile Pic" />
-          </div>
+          <img className="profile-pic" src={image} alt="Profile Pic" />
           <div className="banner-text">
             <h1 className="responsive-headline">{name}</h1>
             <Typical
