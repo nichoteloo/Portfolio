@@ -65,11 +65,11 @@ export default function Footer() {
       <div className="container">
         <div className="footer__col1">
           <h1 className="footer__col1__title">Nicolas C.</h1>
+          <PText>Junior Software Developer.</PText>
           <PText>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos
-            facilis ullam ea architecto dolore at modi eum, blanditiis
-            praesentium deleniti laudantium quas, impedit provident explicabo
-            exercitationem veniam, officia porro repudiandae.
+            Focused on Backend and IoT Development. Work with Python and PHP
+            most of the time, but am also familiar with Go and Java. Reach me
+            out and let's collaborate together !
           </PText>
         </div>
         <div className="footer__col2">

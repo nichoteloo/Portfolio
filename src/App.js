@@ -12,8 +12,8 @@ import SmoothScrollBar from './components/Global/SmoothScrollBar';
 export default function App() {
   return (
     <Router>
+      <NavMenu />
       <SmoothScrollBar>
-        <NavMenu />
         <Switch>
           <Route path="/about">
             <About />

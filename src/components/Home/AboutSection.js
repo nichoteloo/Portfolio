@@ -96,7 +96,10 @@ export default function AboutSection() {
             <div className="row">
               <div className="download">
                 <p>
-                  <a href="/about" className="button">
+                  <a
+                    href="https://drive.google.com/file/d/1DRyyUn8L_hlGLZftychvlcNeT3BXY2s4/view?usp=sharing"
+                    className="button"
+                  >
                     My Resume
                   </a>
                   <a href="/about" className="button">
