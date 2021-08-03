@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const AboutSectionStyles = styled.div`
   #about {
-    margin-top: -10rem;
+    margin-top: -20rem;
     padding: 10rem 30rem;
   }
   #about h2 {
@@ -20,17 +20,19 @@ const AboutSectionStyles = styled.div`
     margin-top: 2rem;
   }
   #about .download .button {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-top: 6px;
-    background: #015956;
+    background-color: #dfebed;
     display: inline-block;
+    padding: 0.5em 0;
     height: 40px;
-    width: 200px;
+    width: 160px;
     border-radius: 12px;
+    color: var(--black);
   }
   #about .download .button:hover {
-    background: #fff;
-    color: #2b2b2b;
+    background-color: var(--deep-blue);
+    color: var(--white);
   }
   @media only screen and (max-width: 768px) {
     #about {
@@ -84,7 +86,7 @@ export default function AboutSection() {
               <div className="download">
                 <p>
                   <a href="https://google.com" className="button">
-                    DOWNLOAD MY RESUME
+                    MY RESUME
                   </a>
                 </p>
               </div>

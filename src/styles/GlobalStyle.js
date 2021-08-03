@@ -9,8 +9,9 @@ const GlobalStyles = createGlobalStyle`
   :root{
     --blue-bg: #113a5d;
     --shades-blue-1: #34699a;
-    --deep-blue: #070f4e;
+    --deep-blue: #00204a;
     --shades-blue-2: #65c6c4;
+    --gray-1: #dfebed;
     --white: white;
     --black: black;
   }

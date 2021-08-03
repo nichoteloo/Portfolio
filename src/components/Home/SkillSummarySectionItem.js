@@ -5,12 +5,12 @@ import PText from '../PText';
 
 const ItemStyles = styled.div`
   text-align: center;
-  .serviceItem__icon {
+  .skillItem__icon {
     svg {
       width: 3rem;
     }
   }
-  .serviceItem__title {
+  .skillItem__title {
     font-size: 2.5rem;
     font-family: 'Montserrat SemiBold';
   }
@@ -19,15 +19,15 @@ const ItemStyles = styled.div`
   }
 `;
 
-export default function ServiceSectionItem({
+export default function SkillSummarySectionItem({
   icon = <MdDesktopMac />,
   title = 'Web Design',
   desc = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ok",
 }) {
   return (
     <ItemStyles>
-      <div className="serviceItem__icon">{icon}</div>
-      <div className="serviceItem__title">{title}</div>
+      <div className="skillItem__icon">{icon}</div>
+      <div className="skillItem__title">{title}</div>
       <PText>{desc}</PText>
     </ItemStyles>
   );

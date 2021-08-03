@@ -17,7 +17,7 @@ const ProjectSectionStyle = styled.div`
   }
   .swiper-container {
     padding-top: 7rem;
-    max-width: 100%;
+    max-width: 80%;
   }
   .swiper-button-prev,
   .swiper-button-next {
@@ -33,6 +33,7 @@ const ProjectSectionStyle = styled.div`
     top: 0;
     color: var(--white);
     border-radius: 8px;
+    transform: translateX(-22%);
   }
   .swiper-button-next {
     right: 0;
@@ -53,11 +54,15 @@ const ProjectSectionStyle = styled.div`
       flex-direction: column;
       max-width: 300px;
       margin: 0 auto;
-      margin-top: 7rem;
-      gap: 5rem;
       .projectItem__img {
         width: 100%;
       }
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      height: 25px;
+      width: 25px;
+      transform: translateX(30%) translateY(50%);
     }
   }
 `;
@@ -69,7 +74,7 @@ export default function ProjectSection() {
         <SectionTitle heading="Projects" subheading="some of my recent works" />
         <div className="projects__allItems">
           <Swiper
-            spaceBetween={30}
+            spaceBetween={8}
             slidePerView={1}
             navigation
             breakpoints={{

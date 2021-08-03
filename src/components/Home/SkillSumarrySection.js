@@ -5,7 +5,7 @@ import SkillSummarySectionItem from './SkillSummarySectionItem';
 import SectionTitle from '../SectionTitle';
 
 const SkillSummaryItemStyles = styled.div`
-  padding: 20rem 0;
+  padding: 22rem 0;
   .skill__allItems {
     display: flex;
     gap: 4rem;

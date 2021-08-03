@@ -4,11 +4,10 @@ import styled from 'styled-components';
 import projectImg from '../../assets/images/projectImg.png';
 
 const ProjectItemStyles = styled.div`
-  max-width: 300px;
-  // background-color: red;
-  margin: auto;
+  max-width: 220px;
+  margin: 0 auto;
   .projectItem__img {
-    width: 70%;
+    width: 100%;
     height: 280px;
     overflow: hidden;
     border-radius: 12px;
@@ -22,7 +21,7 @@ const ProjectItemStyles = styled.div`
     margin-top: 1rem;
     background-color: var(--deep-blue);
     padding: 1rem;
-    width: 70%;
+    width: 100%;
     border-radius: 12px;
   }
   .projectItem__title {
@@ -35,10 +34,13 @@ const ProjectItemStyles = styled.div`
   }
   @media only screen and (max-width: 768px) {
     .projectItem__img {
-      height: 350px;
+      height: 280px;
     }
-    .projectItem__info {
-      width: 100%;
+    .projectItem__title {
+      font-size: 1.8rem;
+    }
+    .projectItem__desc {
+      font-size: 1.4rem;
     }
   }
 `;
