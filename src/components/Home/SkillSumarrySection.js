@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { BiCog, BiCodeAlt, BiCloudUpload } from 'react-icons/bi';
 import SkillSummarySectionItem from './SkillSummarySectionItem';
-import SectionTitle from '../SectionTitle';
+import SectionTitle from '../Global/SectionTitle';
 
 const SkillSummaryItemStyles = styled.div`
   padding: 22rem 0;
@@ -20,6 +20,9 @@ const SkillSummaryItemStyles = styled.div`
       margin: 0 auto;
       margin-top: 5rem;
       gap: 5rem;
+    }
+    .skill__allItems:nth-child(3) {
+      transform: translateX(2%);
     }
   }
 `;

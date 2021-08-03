@@ -11,6 +11,7 @@ const GlobalStyles = createGlobalStyle`
     --shades-blue-1: #34699a;
     --deep-blue: #00204a;
     --shades-blue-2: #65c6c4;
+    --shades-blue-3: #062743;
     --gray-1: #dfebed;
     --white: white;
     --black: black;
@@ -39,19 +40,20 @@ const GlobalStyles = createGlobalStyle`
     width: 90%;
     margin: 0 auto;
   }
+
 /* Smooth Scroll  */
   [data-scrollbar] {
     height: 100vh;
     overflow: hidden;
-    background-color: var(--white);
+    background-color: var(--shades-blue-1);
     .scroll-content {
-      background-color: var(--white);
+      background-color: var(--blue-bg);
     }
     .scrollbar-track.scrollbar-track-y {
       z-index: 101;
-      background: var(--white);
+      background: var(--deep-blue);
       .scrollbar-thumb-y {
-        background: var(--white);
+        background: var(--shades-blue-1);
       }
     }
   }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { MdDesktopMac } from 'react-icons/md';
 import styled from 'styled-components';
-import PText from '../PText';
+import PText from '../Global/PText';
 
 const ItemStyles = styled.div`
   text-align: center;
@@ -16,6 +16,11 @@ const ItemStyles = styled.div`
   }
   .para {
     margin-top: 2rem;
+  }
+  @media only screen and (max-width: 768px) {
+    .skillItem__icon {
+      transform: translateX(-3%);
+    }
   }
 `;
 

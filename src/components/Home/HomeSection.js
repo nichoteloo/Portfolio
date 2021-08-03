@@ -120,24 +120,32 @@ export default function HomeSection({ name = data.main.name }) {
             <hr />
             <ul className="social">
               <li>
-                <FaLinkedin />
+                <a href="https://www.linkedin.com/in/nicolaschristianto/">
+                  <FaLinkedin />
+                </a>
               </li>
               <li>
-                <FaTelegram />
+                <a href="https://t.me/nichotelo">
+                  <FaTelegram />
+                </a>
               </li>
               <li>
-                <FaGithubSquare />
+                <a href="https://github.com/nichoteloo">
+                  <FaGithubSquare />
+                </a>
               </li>
               <li>
-                <FaEnvelope />
+                <a href="mailto:nichotelo@outlook.com">
+                  <FaEnvelope />
+                </a>
               </li>
             </ul>
           </div>
-          <p className="scrolldown">
+          {/* <p className="scrolldown">
             <a href="#about">
               <FaChevronCircleDown />
             </a>
-          </p>
+          </p> */}
         </div>
       </header>
     </HomeSectionStyles>

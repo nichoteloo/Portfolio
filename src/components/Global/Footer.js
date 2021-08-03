@@ -15,6 +15,9 @@ const FooterStyle = styled.div`
     flex: 2;
     text-align: justify;
   }
+  .footer__col2 {
+    transform: translateX(8%);
+  }
   .footer__col2,
   .footer__col3,
   .footer__col4 {
@@ -32,12 +35,16 @@ const FooterStyle = styled.div`
     margin-top: 2rem;
   }
   @media only screen and (max-width: 768px) {
+    padding-top: 1.5rem;
     .container {
       flex-direction: column;
       gap: 0rem;
       & > div {
         margin-top: 5rem;
       }
+    }
+    .footer__col2 {
+      transform: translateX(-13%);
     }
     .footer__col1 .para {
       max-width: 100%;

@@ -11,13 +11,16 @@ const AboutSectionStyles = styled.div`
     margin-bottom: 12px;
   }
   #about p {
-    line-height: 20px;
-    font-size: 1.8rem;
+    line-height: 22px;
+    font-size: 2rem;
     text-align: justify;
   }
   #about .download p {
     text-align: center;
     margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
   }
   #about .download .button {
     font-size: 2.2rem;
@@ -30,9 +33,19 @@ const AboutSectionStyles = styled.div`
     border-radius: 12px;
     color: var(--black);
   }
+  #about .download .button:nth-child(2) {
+    background-color: transparent;
+    color: white;
+    border: 2px solid var(--white);
+  }
   #about .download .button:hover {
-    background-color: var(--deep-blue);
+    background-color: var(--shades-blue-1);
     color: var(--white);
+  }
+  #about .download .button:nth-child(2):hover {
+    background-color: var(--shades-blue-2);
+    color: var(--black);
+    border: 2px solid var(--shades-blue-2);
   }
   @media only screen and (max-width: 768px) {
     #about {
@@ -51,6 +64,11 @@ const AboutSectionStyles = styled.div`
       height: 35px;
       width: 180px;
     }
+    #about .download p {
+      margin-left: 1rem;
+      margin-right: 1rem;
+      gap: 2rem;
+    }
   }
 `;
 
@@ -63,30 +81,26 @@ export default function AboutSection() {
             <h2>Hello, I'm Nicolas!</h2>
             <br />
             <p>
-              I am Full Stack Software Engineer in the SF Bay Area with a
-              Bachelor’s Degree and 2+ years professional experience in Business
-              Administration combined with 3 Liberal Arts Associate’s Degrees in
-              Arts and Sciences. I am a naturally curious person which makes me
-              want to always learn new things, a problem-solver who questions
-              everything, and a hard worker who doesn't take life too seriously
-              and enjoys the little things. I When I was younger I was exposed
-              to coding for fun, but didn't know I could make a career out of
-              it. Being from a small city across San Francisco, I wasn't exposed
-              to all the opportunities I could make for myself.
+              I'm Nicolas, Junior Software Developer with a Bachelor's Degree in
+              Engineering. Currently staying in Yogyakarta, Indonesia. I
+              recognize myself as a precise, communicative, detail-oriented,
+              fast-learner, and analytical type of person.
             </p>
             <br />
             <p>
-              Administration combined with 3 Liberal Arts Associate’s Degrees in
-              Arts and Sciences. I am a naturally curious person which makes me
-              want to always learn new things, a problem-solver who questions
-              everything, and a hard worker who doesn't take life too seriously
-              and enjoys the little things.
+              By now, I spend more time on developing self-projects by making a
+              Web Application or several IoT Projects. I am also enthusiastic
+              about Back-End Operation and Software System Design. This page is
+              the place where you can find all my works. Have a good time !
             </p>
             <div className="row">
               <div className="download">
                 <p>
-                  <a href="https://google.com" className="button">
-                    MY RESUME
+                  <a href="/about" className="button">
+                    My Resume
+                  </a>
+                  <a href="/about" className="button">
+                    More About Me
                   </a>
                 </p>
               </div>

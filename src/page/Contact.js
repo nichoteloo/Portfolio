@@ -1,14 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const ContactStyles = styled.div`
-  padding: 10rem 0;
-`;
+import ContactSection from '../components/Contact/ContactSection';
 
 export default function Contact() {
   return (
-    <ContactStyles>
-      <h1>This is Contact page</h1>
-    </ContactStyles>
+    <div>
+      <ContactSection />
+    </div>
   );
 }

@@ -4,7 +4,7 @@ import HomeSection from '../components/Home/HomeSection';
 import AboutSection from '../components/Home/AboutSection';
 import ProjectSection from '../components/Home/ProjectSection';
 import SkillSummarySection from '../components/Home/SkillSumarrySection';
-import ContactSection from '../components/Home/ContactSection';
+import ContactBanner from '../components/Home/ContactBanner';
 
 const HomeStyles = styled.div`
   padding: 10rem 0;
@@ -17,7 +17,7 @@ export default function Home() {
       <AboutSection />
       <SkillSummarySection />
       <ProjectSection />
-      <ContactSection />
+      <ContactBanner />
     </HomeStyles>
   );
 }

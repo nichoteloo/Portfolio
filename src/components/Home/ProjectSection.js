@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
 import ProjectItem from './ProjectItem';
-import SectionTitle from '../SectionTitle';
+import SectionTitle from '../Global/SectionTitle';
 import projects from '../../assets/data/projects';
 import 'swiper/swiper-bundle.min.css';
 
@@ -62,7 +62,7 @@ const ProjectSectionStyle = styled.div`
     .swiper-button-next {
       height: 25px;
       width: 25px;
-      transform: translateX(30%) translateY(50%);
+      transform: translateX(40%) translateY(50%);
     }
   }
 `;
@@ -99,7 +99,7 @@ export default function ProjectSection() {
                   <ProjectItem
                     title={project.name}
                     img={project.img}
-                    desc={project.decs}
+                    desc={project.desc}
                   />
                 </SwiperSlide>
               );
