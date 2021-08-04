@@ -36,6 +36,7 @@ const AboutPageStyle = styled.div`
   }
   .about__info {
     margin-bottom: 4rem;
+    text-align: justify;
     .para {
       max-width: 100%;
     }
@@ -96,24 +97,25 @@ export default function About() {
             <h2 className="about__heading">A junior software developer</h2>
             <div className="about__info">
               <PText>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-                itaque pariatur, voluptatem ad aut perspiciatis nisi vero et ex
-                corporis commodi, quasi perferendis animi, architecto error.
-                Nemo ex nesciunt ipsa. <br />
-                <br />
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
-                veritatis, id harum ex nisi commodi expedita amet perspiciatis
-                quam quis non laudantium facilis esse tenetur ullam accusantium
-                excepturi. Fuga, fugit.
+                Work with Python and PHP most of the time but am also familiar
+                with Go or Javascript. I am experienced with a number of
+                projects related to software development including Web Developer
+                Role (Dictionary Apps), Database Admin (IT Project OpenSID),
+                Project Manager (Book Reader Blind), and Backend Engineer
+                (Lymphoblast Counter).
                 <br />
                 <br />
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod
-                asperiores eius tempora, impedit nesciunt veritatis quibusdam?
-                Amet minus tenetur et laudantium. Doloremque quis quasi quas
-                repellat eligendi dolore illum quo.
+                My educational background led me to become an IoT engineer,
+                proven with my college duties or final bachelor project related
+                to IoT and Microcontroller things.
+                <br />
+                <br />
+                Although I am a recent college graduate, my maturity,
+                professionality, skill and ability to work with others will make
+                me an asset for your team. So let's collaborate together.
               </PText>
               <div className="button">
-                <Button btnLink="#" btnText="Download CV" />
+                <Button btnLink="#" btnText="My Resume" />
               </div>
             </div>
           </div>

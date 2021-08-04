@@ -76,7 +76,7 @@ export default function Projects() {
               type="text"
               value={searchText}
               onChange={handleChange}
-              placeholder="ProjectName"
+              placeholder="Search project..."
             />
             <MdSearch className="searchIcon" />
           </form>

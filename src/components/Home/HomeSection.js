@@ -120,22 +120,38 @@ export default function HomeSection({ name = data.main.name }) {
             <hr />
             <ul className="social">
               <li>
-                <a href="https://www.linkedin.com/in/nicolaschristianto/">
+                <a
+                  href="https://www.linkedin.com/in/nicolaschristianto/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaLinkedin />
                 </a>
               </li>
               <li>
-                <a href="https://t.me/nichotelo">
+                <a
+                  href="https://t.me/nichotelo"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaTelegram />
                 </a>
               </li>
               <li>
-                <a href="https://github.com/nichoteloo">
+                <a
+                  href="https://github.com/nichoteloo"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaGithubSquare />
                 </a>
               </li>
               <li>
-                <a href="mailto:nichotelo@outlook.com">
+                <a
+                  href="mailto:nichotelo@outlook.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaEnvelope />
                 </a>
               </li>

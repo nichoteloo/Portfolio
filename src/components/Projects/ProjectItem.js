@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import projectImg from '../../assets/images/projectImg.png';
+import robotImg from '../../assets/images/robot.jpg';
 
 const ProjectItemStyles = styled.div`
   .projectItem__img {
@@ -39,7 +39,7 @@ const ProjectItemStyles = styled.div`
 `;
 
 export default function ProjectItem({
-  img = projectImg,
+  img = robotImg,
   title = 'Project Name',
   desc = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam non incidunt, voluptatibus laboriosam illo enim? Debitis modi cumque, nam voluptatibus molestiae quas inventore dolorum, officiis voluptatum mollitia, ea quod quia.',
 }) {

@@ -99,6 +99,8 @@ export default function AboutSection() {
                   <a
                     href="https://drive.google.com/file/d/1DRyyUn8L_hlGLZftychvlcNeT3BXY2s4/view?usp=sharing"
                     className="button"
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     My Resume
                   </a>

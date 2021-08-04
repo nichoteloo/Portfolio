@@ -33,7 +33,7 @@ export default function ContactInfoItem({
     <ItemStyles>
       <div className="icon">{icon}</div>
       <div className="info">
-        <a href={link}>
+        <a href={link} target="_blank" rel="noreferrer">
           <PText>{text}</PText>
         </a>
       </div>

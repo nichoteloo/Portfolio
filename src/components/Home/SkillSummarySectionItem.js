@@ -18,6 +18,7 @@ const ItemStyles = styled.div`
     margin-top: 2rem;
   }
   @media only screen and (max-width: 768px) {
+    transform: translateX(-1%);
     .skillItem__icon {
       transform: translateX(-3%);
     }

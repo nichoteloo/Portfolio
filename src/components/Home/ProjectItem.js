@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from 'styled-components';
-import projectImg from '../../assets/images/projectImg.png';
+import robotImg from '../../assets/images/robot.jpg';
 
 const ProjectItemStyles = styled.div`
   max-width: 220px;
@@ -32,6 +34,20 @@ const ProjectItemStyles = styled.div`
     font-family: 'RobotoMono Regular';
     margin-top: 1rem;
   }
+  .repo-icon {
+    margin-top: 1.5rem;
+    margin-left: 0.2rem;
+    display: inline-block;
+    background-color: var(--black);
+    width: 23px;
+    height: 23px;
+    border-radius: 8px;
+    text-align: center;
+    transform: translateY(-10%);
+  }
+  .repo-icon .icon {
+    transform: translateX(-4%) translateY(18%);
+  }
   @media only screen and (max-width: 768px) {
     .projectItem__img {
       height: 280px;
@@ -46,9 +62,10 @@ const ProjectItemStyles = styled.div`
 `;
 
 export default function ProjectItem({
-  img = projectImg,
+  img = robotImg,
   title = 'Project Name',
   desc = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam non incidunt, voluptatibus laboriosam illo enim?',
+  link = 'https://github.com/nichoteloo/Undergraduate-Thesis',
 }) {
   return (
     <ProjectItemStyles>
@@ -61,6 +78,9 @@ export default function ProjectItem({
         </Link>
         <p className="projectItem__desc">{desc}</p>
       </div>
+      <a href={link} target="_blank" rel="noreferrer" className="repo-icon">
+        <FontAwesomeIcon icon={faGithub} size="2x" className="icon" />
+      </a>
     </ProjectItemStyles>
   );
 }
