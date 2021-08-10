@@ -12,6 +12,7 @@ const projects = [
     desc: 'Framework Optimization of Fingerprint Method For Wi-Fi Indoor Positioning.',
     img: LocationImg,
     link: 'https://github.com/nichoteloo/Undergraduate-Thesis',
+    prod: true,
   },
   {
     id: uuidv4(),
@@ -19,6 +20,7 @@ const projects = [
     desc: 'API Development for Lymphoblast Server (Image Classification).',
     img: Lymphoblast,
     link: 'https://github.com/nichoteloo/API-Lymphoblast-Counter',
+    prod: true,
   },
   {
     id: uuidv4(),
@@ -26,6 +28,7 @@ const projects = [
     desc: 'Access Public API for Covid Monitoring Purposes. Tracking amount of cases.',
     img: CovidImg,
     link: 'https://github.com/nichoteloo/Covid-Monitoring',
+    prod: false,
   },
   {
     id: uuidv4(),
@@ -33,6 +36,7 @@ const projects = [
     desc: 'Help me find out synonyms and definition of a word. Single page web app.',
     img: DictImg,
     link: 'https://github.com/nichoteloo/Dictionary-Apps',
+    prod: true,
   },
   {
     id: uuidv4(),
@@ -40,6 +44,7 @@ const projects = [
     desc: 'Turtlebot3 and mobile robot development run in ROS noetic 3.',
     img: RobotImg,
     link: 'https://github.com/nichoteloo/ROS-Noetic-devel',
+    prod: false,
   },
 ];
 

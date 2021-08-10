@@ -157,11 +157,14 @@ export default function HomeSection({ name = data.main.name }) {
               </li>
             </ul>
           </div>
-          {/* <p className="scrolldown">
-            <a href="#about">
+          <p className="scrolldown">
+            {/* <Link to="#about">
+              <FaChevronCircleDown />
+            </Link> */}
+            <a href="#about" className="smoothscroll">
               <FaChevronCircleDown />
             </a>
-          </p> */}
+          </p>
         </div>
       </header>
     </HomeSectionStyles>

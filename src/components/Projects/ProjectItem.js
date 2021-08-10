@@ -31,7 +31,17 @@ const ProjectItemStyles = styled.div`
     font-family: 'RobotoMono Regular';
     margin-top: 1rem;
   }
-  .repo-icon {
+  .add-ons {
+    display: flex;
+  }
+  .add-ons .left {
+    flex: 2;
+  }
+  .add-ons .right {
+    flex: 1;
+    transform: translateY(12%);
+  }
+  .add-ons .left .repo-icon {
     margin-top: 1.5rem;
     margin-left: 0.2rem;
     display: inline-block;
@@ -42,8 +52,36 @@ const ProjectItemStyles = styled.div`
     text-align: center;
     transform: translateY(-10%);
   }
-  .repo-icon .icon {
+  .add-ons .left .repo-icon .icon {
     transform: translateX(-4%) translateY(18%);
+  }
+  .add-ons .right {
+    margin-top: 1.5rem;
+    display: flex;
+  }
+  .add-ons .right .dev {
+    background-color: #ef5353;
+    font-size: 1.4rem;
+    margin: 0 1rem;
+    text-align: center;
+    width: 32px;
+    height: 15px;
+    font-family: 'Montserrat-Bold';
+    color: var(--black);
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  .add-ons .right .prod {
+    background-color: #5be7a9;
+    font-size: 1.4rem;
+    margin: 0 1rem;
+    text-align: center;
+    width: 36px;
+    height: 15px;
+    font-family: 'Montserrat-Bold';
+    color: var(--black);
+    border-radius: 4px;
+    font-weight: bold;
   }
   @media only screen and (max-width: 768px) {
     margin: 0 2rem;
@@ -59,21 +97,33 @@ export default function ProjectItem({
   title = 'Project Name',
   desc = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam non incidunt, voluptatibus laboriosam illo enim? Debitis modi cumque, nam voluptatibus molestiae quas inventore dolorum, officiis voluptatum mollitia, ea quod quia.',
   link = 'https://github.com/nichoteloo/Undergraduate-Thesis',
+  prod = false,
 }) {
   return (
     <ProjectItemStyles>
-      <Link to="/projects" className="projectItem__img">
+      <a
+        href={link}
+        target="_blank"
+        rel="noreferrer"
+        className="projectItem__img"
+      >
         <img src={img} alt="project img" />
-      </Link>
+      </a>
       <div className="projectItem__info">
-        <Link to="#">
-          <h3 className="projectItem__title">{title}</h3>
-        </Link>
+        <h3 className="projectItem__title">{title}</h3>
         <p className="projectItem__desc">{desc}</p>
       </div>
-      <a href={link} target="_blank" rel="noreferrer" className="repo-icon">
-        <FontAwesomeIcon icon={faGithub} size="2x" className="icon" />
-      </a>
+      <div className="add-ons">
+        <div className="left">
+          <a href={link} target="_blank" rel="noreferrer" className="repo-icon">
+            <FontAwesomeIcon icon={faGithub} size="2x" className="icon" />
+          </a>
+        </div>
+        <div className="right">
+          <h1>Status : </h1>
+          <div className={prod ? 'prod' : 'dev'}>{prod ? 'prod' : 'dev'}</div>
+        </div>
+      </div>
     </ProjectItemStyles>
   );
 }

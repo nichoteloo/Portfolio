@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import PText from '../components/Global/PText';
-import Button from '../components/Global/Button';
 import AboutImg from '../assets/images/image.jpg';
 import AboutInfoItem from '../components/About/AboutInfoItem';
 

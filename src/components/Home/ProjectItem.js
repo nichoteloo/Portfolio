@@ -41,7 +41,7 @@ const ProjectItemStyles = styled.div`
     flex: 2;
   }
   .add-ons .right {
-    flex: 1.8;
+    flex: 1.7;
     transform: translateY(12%);
   }
   .add-ons .left .repo-icon {
@@ -60,8 +60,31 @@ const ProjectItemStyles = styled.div`
   }
   .add-ons .right {
     margin-top: 1.5rem;
-    display: inline-block;
-    background-color: var(--black);
+    display: flex;
+  }
+  .add-ons .right .dev {
+    background-color: #ef5353;
+    font-size: 1.4rem;
+    margin: 0 1rem;
+    text-align: center;
+    width: 32px;
+    height: 15px;
+    font-family: 'Montserrat-Bold';
+    color: var(--black);
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  .add-ons .right .prod {
+    background-color: #5be7a9;
+    font-size: 1.4rem;
+    margin: 0 1rem;
+    text-align: center;
+    width: 36px;
+    height: 15px;
+    font-family: 'Montserrat-Bold';
+    color: var(--black);
+    border-radius: 4px;
+    font-weight: bold;
   }
   @media only screen and (max-width: 768px) {
     .projectItem__img {
@@ -81,6 +104,7 @@ export default function ProjectItem({
   title = 'Project Name',
   desc = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam non incidunt, voluptatibus laboriosam illo enim?',
   link = 'https://github.com/nichoteloo/Undergraduate-Thesis',
+  prod = true,
 }) {
   return (
     <ProjectItemStyles>
@@ -101,6 +125,7 @@ export default function ProjectItem({
         </div>
         <div className="right">
           <h1>Status : </h1>
+          <div className={prod ? 'prod' : 'dev'}>{prod ? 'prod' : 'dev'}</div>
         </div>
       </div>
     </ProjectItemStyles>
