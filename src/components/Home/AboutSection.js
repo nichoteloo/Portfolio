@@ -60,9 +60,9 @@ const AboutSectionStyles = styled.div`
       text-align: justify;
     }
     #about .download .button {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       height: 35px;
-      width: 180px;
+      width: 210px;
     }
     #about .download p {
       margin-left: 1rem;

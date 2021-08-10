@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import robotImg from '../../assets/images/robot.jpg';
 
 const ProjectItemStyles = styled.div`
@@ -29,6 +31,20 @@ const ProjectItemStyles = styled.div`
     font-family: 'RobotoMono Regular';
     margin-top: 1rem;
   }
+  .repo-icon {
+    margin-top: 1.5rem;
+    margin-left: 0.2rem;
+    display: inline-block;
+    background-color: var(--black);
+    width: 23px;
+    height: 23px;
+    border-radius: 8px;
+    text-align: center;
+    transform: translateY(-10%);
+  }
+  .repo-icon .icon {
+    transform: translateX(-4%) translateY(18%);
+  }
   @media only screen and (max-width: 768px) {
     margin: 0 2rem;
     .projectItem__img {
@@ -42,6 +58,7 @@ export default function ProjectItem({
   img = robotImg,
   title = 'Project Name',
   desc = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam non incidunt, voluptatibus laboriosam illo enim? Debitis modi cumque, nam voluptatibus molestiae quas inventore dolorum, officiis voluptatum mollitia, ea quod quia.',
+  link = 'https://github.com/nichoteloo/Undergraduate-Thesis',
 }) {
   return (
     <ProjectItemStyles>
@@ -54,6 +71,9 @@ export default function ProjectItem({
         </Link>
         <p className="projectItem__desc">{desc}</p>
       </div>
+      <a href={link} target="_blank" rel="noreferrer" className="repo-icon">
+        <FontAwesomeIcon icon={faGithub} size="2x" className="icon" />
+      </a>
     </ProjectItemStyles>
   );
 }

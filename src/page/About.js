@@ -41,17 +41,34 @@ const AboutPageStyle = styled.div`
       max-width: 100%;
     }
   }
+  .about__info .button-link {
+    font-size: 2.1rem;
+    background-color: #dfebed;
+    display: inline-block;
+    height: 30px;
+    width: 130px;
+    border-radius: 12px;
+    color: var(--black);
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  .about__info .button-link:hover {
+    background-color: var(--shades-blue-1);
+    color: var(--white);
+  }
   .right {
     transform: translateY(-3%);
     img {
       height: 350px;
       width: 300px;
       border: 3px solid var(--shades-blue-2);
+      border-radius: 12px;
     }
   }
   .about__info__items {
-    margin-top: 15rem;
+    margin-top: 10rem;
     margin-left: 5rem;
+    margin-bottom: 10rem;
   }
   .about__info__item {
     margin-bottom: 10rem;
@@ -72,6 +89,7 @@ const AboutPageStyle = styled.div`
     }
     .about__info__items {
       margin-left: 2rem;
+      margin-bottom: -7rem;
     }
     .about__subheading {
       font-size: 1.8rem;
@@ -81,6 +99,12 @@ const AboutPageStyle = styled.div`
     }
     .about__info__heading {
       font-size: 3rem;
+    }
+    .right {
+      img {
+        height: 300px;
+        width: 250px;
+      }
     }
   }
 `;
@@ -115,7 +139,14 @@ export default function About() {
                 me an asset for your team. So let's collaborate together.
               </PText>
               <div className="button">
-                <Button btnLink="#" btnText="My Resume" />
+                <a
+                  href="https://drive.google.com/file/d/1DRyyUn8L_hlGLZftychvlcNeT3BXY2s4/view?usp=sharing"
+                  className="button-link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  My Resume
+                </a>
               </div>
             </div>
           </div>
@@ -125,45 +156,73 @@ export default function About() {
         </div>
         <div className="about__info__items">
           <div className="about__info__item">
-            <h1 className="about__info__heading">Education</h1>
-            <AboutInfoItem
-              title="School"
-              items={['Nasirabad Govt. High School, Chattogram']}
-            />
-            <AboutInfoItem
-              title="Collage"
-              items={['BAF Shaheen College Chattogram']}
-            />
-            <AboutInfoItem
-              title="Varsity"
-              items={['University Of Chitiagong']}
-            />
-          </div>
-          <div className="about__info__item">
             <h1 className="about__info__heading">My Skills</h1>
-
             <AboutInfoItem
               title="FrontEnd"
-              items={['HTML', 'CSS', 'JavaScript', 'REACT']}
+              items={['HTML', 'CSS', 'JavaScript', 'ReactJS']}
             />
-            <AboutInfoItem title="BackEnd" items={['Node', 'Express', 'PHP']} />
             <AboutInfoItem
-              title="Design"
-              items={['Photoshop', 'After Effects', 'Figma']}
+              title="BackEnd"
+              items={['Django', 'Flask', 'Codeigniter']}
+            />
+            <AboutInfoItem
+              title="DevOps"
+              items={['Git', 'Docker', 'Heroku', 'Canva']}
+            />
+            <AboutInfoItem
+              title="ML-Stack"
+              items={['Tensorflow', 'Scikit-Learn', 'Pandas']}
+            />
+            <AboutInfoItem
+              title="IoT-Stack"
+              items={['Mosquitto-MQTT', 'NodeRed', 'Grafana']}
             />
           </div>
           <div className="about__info__item">
-            <h1 className="about__info__heading">Experiences</h1>
-
+            <h1 className="about__info__heading">Education</h1>
             <AboutInfoItem
-              title="2010-2012"
-              items={['junior developer at web Cifar']}
+              title="University"
+              items={['Engineering Physics (Electrical & Electronic) UGM']}
             />
             <AboutInfoItem
-              title="2012-2016"
-              items={['Front end developer at web Cifar ']}
+              title="Academy"
+              items={['Bangkit Academy with Machine Learning Specialization']}
             />
-            <AboutInfoItem title="2016-" items={['Freelance web Developer']} />
+          </div>
+          <div className="about__info__item">
+            <h1 className="about__info__heading">Certifications</h1>
+            <AboutInfoItem
+              title="Coursera"
+              items={[
+                'Tensorflow Developer Specialization supported by DeepLearning.ai',
+              ]}
+            />
+            <AboutInfoItem
+              title="Coursera"
+              items={[
+                'Google IT Support for Professional & Google Automation with Python',
+              ]}
+            />
+            <AboutInfoItem
+              title="AWS"
+              items={[
+                'AWS Academy Graduate with AWS Academy Cloud Foundations Specialization',
+              ]}
+            />
+            <AboutInfoItem
+              title="Siemens"
+              items={[
+                'Industrial Ethernet, Process Control Basic, Profinet with Siemens Digital Academy',
+              ]}
+            />
+          </div>
+          <div className="about__info__item">
+            <h1 className="about__info__heading">Organization</h1>
+            <AboutInfoItem title="Kamalogis" items={['President - 2020']} />
+            <AboutInfoItem
+              title="Gamaforce"
+              items={['Technical Telemetry Lead - 2019']}
+            />
           </div>
         </div>
       </div>

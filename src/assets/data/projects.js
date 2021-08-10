@@ -37,7 +37,7 @@ const projects = [
   {
     id: uuidv4(),
     name: 'ROS Noetic',
-    desc: 'Turtlebot3 and mobile robot development run in ROS noetic 3. (Still in development)',
+    desc: 'Turtlebot3 and mobile robot development run in ROS noetic 3.',
     img: RobotImg,
     link: 'https://github.com/nichoteloo/ROS-Noetic-devel',
   },

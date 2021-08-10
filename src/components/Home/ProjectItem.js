@@ -34,7 +34,17 @@ const ProjectItemStyles = styled.div`
     font-family: 'RobotoMono Regular';
     margin-top: 1rem;
   }
-  .repo-icon {
+  .add-ons {
+    display: flex;
+  }
+  .add-ons .left {
+    flex: 2;
+  }
+  .add-ons .right {
+    flex: 1.8;
+    transform: translateY(12%);
+  }
+  .add-ons .left .repo-icon {
     margin-top: 1.5rem;
     margin-left: 0.2rem;
     display: inline-block;
@@ -45,8 +55,13 @@ const ProjectItemStyles = styled.div`
     text-align: center;
     transform: translateY(-10%);
   }
-  .repo-icon .icon {
+  .add-ons .left .repo-icon .icon {
     transform: translateX(-4%) translateY(18%);
+  }
+  .add-ons .right {
+    margin-top: 1.5rem;
+    display: inline-block;
+    background-color: var(--black);
   }
   @media only screen and (max-width: 768px) {
     .projectItem__img {
@@ -78,9 +93,16 @@ export default function ProjectItem({
         </Link>
         <p className="projectItem__desc">{desc}</p>
       </div>
-      <a href={link} target="_blank" rel="noreferrer" className="repo-icon">
-        <FontAwesomeIcon icon={faGithub} size="2x" className="icon" />
-      </a>
+      <div className="add-ons">
+        <div className="left">
+          <a href={link} target="_blank" rel="noreferrer" className="repo-icon">
+            <FontAwesomeIcon icon={faGithub} size="2x" className="icon" />
+          </a>
+        </div>
+        <div className="right">
+          <h1>Status : </h1>
+        </div>
+      </div>
     </ProjectItemStyles>
   );
 }
