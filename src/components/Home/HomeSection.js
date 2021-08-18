@@ -55,11 +55,6 @@ const HomeSectionStyles = styled.div`
     bottom: 300px;
     height: 42px;
     width: 42px;
-
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
   }
   @media only screen and (max-width: 768px) {
     header .profile-pic {
@@ -88,16 +83,18 @@ const HomeSectionStyles = styled.div`
       left: 44%;
       height: 40px;
       width: 40px;
-
-      -webkit-transition: all 0.3s ease-in-out;
-      -moz-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out;
     }
   }
 `;
 
 export default function HomeSection({ name = data.main.name }) {
+  const scrollToAbout = document.querySelector('.smoothscroll');
+  scrollToAbout.addEventListener('click', function () {
+    window.scrollTo({
+      top: 10,
+      behavior: 'smooth',
+    });
+  });
   return (
     <HomeSectionStyles>
       <header id="home">
@@ -158,9 +155,6 @@ export default function HomeSection({ name = data.main.name }) {
             </ul>
           </div>
           <p className="scrolldown">
-            {/* <Link to="#about">
-              <FaChevronCircleDown />
-            </Link> */}
             <a href="#about" className="smoothscroll">
               <FaChevronCircleDown />
             </a>

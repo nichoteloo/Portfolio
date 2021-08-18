@@ -11,6 +11,10 @@ const HomeStyles = styled.div`
 `;
 
 export default function Home() {
+  // const scroll = () => {
+  //   const section = document.querySelector('#about');
+  //   section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  // };
   return (
     <HomeStyles>
       <HomeSection />

@@ -75,7 +75,7 @@ const AboutSectionStyles = styled.div`
 export default function AboutSection() {
   return (
     <AboutSectionStyles>
-      <section id="about">
+      <div id="about">
         <div className="row">
           <div className="main-col">
             <h2>Hello, I'm Nicolas!</h2>
@@ -112,7 +112,7 @@ export default function AboutSection() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </AboutSectionStyles>
   );
 }
