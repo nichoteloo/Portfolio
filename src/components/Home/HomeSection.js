@@ -5,7 +5,7 @@ import {
   FaTelegram,
   FaGithubSquare,
   FaEnvelope,
-  FaChevronCircleDown,
+  FaAngleDoubleDown,
 } from 'react-icons/fa';
 import styled from 'styled-components';
 import data from '../../assets/data/resumeData.json';
@@ -51,10 +51,10 @@ const HomeSectionStyles = styled.div`
   header .scrolldown a {
     position: absolute;
     display: block;
-    left: 48.5%;
+    left: 48.7%;
     bottom: 300px;
-    height: 42px;
-    width: 42px;
+    height: 32px;
+    width: 32px;
   }
   @media only screen and (max-width: 768px) {
     header .profile-pic {
@@ -80,21 +80,19 @@ const HomeSectionStyles = styled.div`
       position: absolute;
       bottom: 350px;
       display: block;
-      left: 44%;
-      height: 40px;
-      width: 40px;
+      left: 47%;
+      height: 35px;
+      width: 35px;
+    }
+  }
+  @media only screen and (max-width: 408px) {
+    header .scrolldown a {
+      left: 45%;
     }
   }
 `;
 
 export default function HomeSection({ name = data.main.name }) {
-  const scrollToAbout = document.querySelector('.smoothscroll');
-  scrollToAbout.addEventListener('click', function () {
-    window.scrollTo({
-      top: 10,
-      behavior: 'smooth',
-    });
-  });
   return (
     <HomeSectionStyles>
       <header id="home">
@@ -156,7 +154,7 @@ export default function HomeSection({ name = data.main.name }) {
           </div>
           <p className="scrolldown">
             <a href="#about" className="smoothscroll">
-              <FaChevronCircleDown />
+              <FaAngleDoubleDown />
             </a>
           </p>
         </div>
