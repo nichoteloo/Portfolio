@@ -100,6 +100,7 @@ const AboutPageStyle = styled.div`
       font-size: 3rem;
     }
     .right {
+      margin-top: 5rem;
       img {
         height: 300px;
         width: 250px;

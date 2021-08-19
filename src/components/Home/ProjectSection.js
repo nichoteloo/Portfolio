@@ -33,7 +33,6 @@ const ProjectSectionStyle = styled.div`
     top: 0;
     color: var(--white);
     border-radius: 8px;
-    transform: translateX(-22%);
   }
   .swiper-button-next {
     right: 0;
@@ -46,11 +45,6 @@ const ProjectSectionStyle = styled.div`
     .projects__allItems {
       display: flex;
       margin-top: -2rem;
-    }
-    .swiper-container {
-      max-width: 90%;
-    }
-    .projects__allItems {
       flex-direction: column;
       max-width: 300px;
       margin: 0 auto;
@@ -58,11 +52,14 @@ const ProjectSectionStyle = styled.div`
         width: 100%;
       }
     }
+    .swiper-container {
+      max-width: 90%;
+    }
     .swiper-button-prev,
     .swiper-button-next {
       height: 25px;
       width: 25px;
-      transform: translateX(40%) translateY(50%);
+      transform: translateX(90%) translateY(50%);
     }
   }
 `;

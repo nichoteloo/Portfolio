@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import robotImg from '../../assets/images/robot.jpg';
 
 const ProjectItemStyles = styled.div`
-  max-width: 220px;
+  max-width: 250px;
   margin: 0 auto;
   .projectItem__img {
     width: 100%;
@@ -36,6 +36,7 @@ const ProjectItemStyles = styled.div`
   }
   .add-ons {
     display: flex;
+    justify-content: space-between;
   }
   .add-ons .left {
     flex: 2;
@@ -43,6 +44,9 @@ const ProjectItemStyles = styled.div`
   .add-ons .right {
     flex: 1.7;
     transform: translateY(12%);
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: end;
   }
   .add-ons .left .repo-icon {
     margin-top: 1.5rem;
@@ -57,10 +61,6 @@ const ProjectItemStyles = styled.div`
   }
   .add-ons .left .repo-icon .icon {
     transform: translateX(-4%) translateY(18%);
-  }
-  .add-ons .right {
-    margin-top: 1.5rem;
-    display: flex;
   }
   .add-ons .right .dev {
     background-color: #ef5353;
@@ -95,6 +95,9 @@ const ProjectItemStyles = styled.div`
     }
     .projectItem__desc {
       font-size: 1.4rem;
+    }
+    .add-ons .right {
+      flex: 1.3;
     }
   }
 `;

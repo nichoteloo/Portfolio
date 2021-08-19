@@ -1,5 +1,6 @@
 import React from 'react';
 import Typical from 'react-typical';
+import { IconContext } from 'react-icons';
 import {
   FaLinkedin,
   FaTelegram,
@@ -67,6 +68,9 @@ const HomeSectionStyles = styled.div`
     header .banner-text h2 {
       font-size: 1.5rem;
     }
+    header .banner-text hr {
+      width: 75%;
+    }
     header .social {
       padding: 0;
       font-size: 22px;
@@ -120,7 +124,13 @@ export default function HomeSection({ name = data.main.name }) {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FaLinkedin />
+                  <IconContext.Provider
+                    value={{
+                      style: { fontSize: '27px' },
+                    }}
+                  >
+                    <FaLinkedin />
+                  </IconContext.Provider>
                 </a>
               </li>
               <li>
@@ -129,7 +139,13 @@ export default function HomeSection({ name = data.main.name }) {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FaTelegram />
+                  <IconContext.Provider
+                    value={{
+                      style: { fontSize: '27px' },
+                    }}
+                  >
+                    <FaTelegram />
+                  </IconContext.Provider>
                 </a>
               </li>
               <li>
@@ -138,7 +154,13 @@ export default function HomeSection({ name = data.main.name }) {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FaGithubSquare />
+                  <IconContext.Provider
+                    value={{
+                      style: { fontSize: '27px' },
+                    }}
+                  >
+                    <FaGithubSquare />
+                  </IconContext.Provider>
                 </a>
               </li>
               <li>
@@ -147,7 +169,13 @@ export default function HomeSection({ name = data.main.name }) {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FaEnvelope />
+                  <IconContext.Provider
+                    value={{
+                      style: { fontSize: '27px' },
+                    }}
+                  >
+                    <FaEnvelope />
+                  </IconContext.Provider>
                 </a>
               </li>
             </ul>

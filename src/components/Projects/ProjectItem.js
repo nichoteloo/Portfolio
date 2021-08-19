@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -33,16 +32,17 @@ const ProjectItemStyles = styled.div`
   }
   .add-ons {
     display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
   }
   .add-ons .left {
     flex: 2;
   }
   .add-ons .right {
     flex: 1;
-    transform: translateY(12%);
+    display: flex;
   }
   .add-ons .left .repo-icon {
-    margin-top: 1.5rem;
     margin-left: 0.2rem;
     display: inline-block;
     background-color: var(--black);
@@ -54,10 +54,6 @@ const ProjectItemStyles = styled.div`
   }
   .add-ons .left .repo-icon .icon {
     transform: translateX(-4%) translateY(18%);
-  }
-  .add-ons .right {
-    margin-top: 1.5rem;
-    display: flex;
   }
   .add-ons .right .dev {
     background-color: #ef5353;
@@ -83,11 +79,27 @@ const ProjectItemStyles = styled.div`
     border-radius: 4px;
     font-weight: bold;
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 768px) and (min-width: 368px) {
     margin: 0 2rem;
     .projectItem__img {
       height: 350px;
       width: 100%;
+    }
+    .add-ons .right {
+      flex: 1;
+    }
+  }
+  @media only screen and (max-width: 368px) {
+    .projectItem__img {
+      height: 300px;
+      width: 90%;
+    }
+    .projectItem__info {
+      margin-right: 3.3rem;
+    }
+    .add-ons .right {
+      flex: 1.2;
+      margin-right: 3.3rem;
     }
   }
 `;

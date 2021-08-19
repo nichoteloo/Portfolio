@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const AboutSectionStyles = styled.div`
@@ -67,7 +68,7 @@ const AboutSectionStyles = styled.div`
     #about .download p {
       margin-left: 1rem;
       margin-right: 1rem;
-      gap: 2rem;
+      gap: 3rem;
     }
   }
 `;
@@ -104,9 +105,9 @@ export default function AboutSection() {
                   >
                     My Resume
                   </a>
-                  <a href="/about" className="button">
+                  <Link to="/about" className="button">
                     More About Me
-                  </a>
+                  </Link>
                 </p>
               </div>
             </div>
