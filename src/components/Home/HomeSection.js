@@ -1,14 +1,16 @@
 import React from 'react';
 import Typical from 'react-typical';
-import { IconContext } from 'react-icons';
-import {
-  FaLinkedin,
-  FaTelegram,
-  FaGithubSquare,
-  FaEnvelope,
-  FaAngleDoubleDown,
-} from 'react-icons/fa';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faLinkedin,
+  faTelegram,
+  faGithub,
+} from '@fortawesome/free-brands-svg-icons';
+import {
+  faEnvelope,
+  faAngleDoubleDown,
+} from '@fortawesome/free-solid-svg-icons';
 import data from '../../assets/data/resumeData.json';
 import image from '../../assets/images/image.jpg';
 
@@ -124,13 +126,7 @@ export default function HomeSection({ name = data.main.name }) {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <IconContext.Provider
-                    value={{
-                      style: { fontSize: '27px' },
-                    }}
-                  >
-                    <FaLinkedin />
-                  </IconContext.Provider>
+                  <FontAwesomeIcon icon={faLinkedin} color="white" size="1x" />
                 </a>
               </li>
               <li>
@@ -139,13 +135,7 @@ export default function HomeSection({ name = data.main.name }) {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <IconContext.Provider
-                    value={{
-                      style: { fontSize: '27px' },
-                    }}
-                  >
-                    <FaTelegram />
-                  </IconContext.Provider>
+                  <FontAwesomeIcon icon={faTelegram} color="white" size="1x" />
                 </a>
               </li>
               <li>
@@ -154,13 +144,7 @@ export default function HomeSection({ name = data.main.name }) {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <IconContext.Provider
-                    value={{
-                      style: { fontSize: '27px' },
-                    }}
-                  >
-                    <FaGithubSquare />
-                  </IconContext.Provider>
+                  <FontAwesomeIcon icon={faGithub} color="white" size="1x" />
                 </a>
               </li>
               <li>
@@ -169,20 +153,18 @@ export default function HomeSection({ name = data.main.name }) {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <IconContext.Provider
-                    value={{
-                      style: { fontSize: '27px' },
-                    }}
-                  >
-                    <FaEnvelope />
-                  </IconContext.Provider>
+                  <FontAwesomeIcon icon={faEnvelope} color="white" size="1x" />
                 </a>
               </li>
             </ul>
           </div>
           <p className="scrolldown">
             <a href="#about" className="smoothscroll">
-              <FaAngleDoubleDown />
+              <FontAwesomeIcon
+                icon={faAngleDoubleDown}
+                color="white"
+                size="4x"
+              />
             </a>
           </p>
         </div>

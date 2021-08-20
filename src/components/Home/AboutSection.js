@@ -21,7 +21,7 @@ const AboutSectionStyles = styled.div`
     margin-top: 2rem;
     display: flex;
     justify-content: center;
-    gap: 5rem;
+    gap: 4rem;
   }
   #about .download .button {
     font-size: 2.2rem;
@@ -30,9 +30,14 @@ const AboutSectionStyles = styled.div`
     display: inline-block;
     padding: 0.5em 0;
     height: 40px;
-    width: 160px;
     border-radius: 12px;
     color: var(--black);
+  }
+  #about .download .button-1 {
+    width: 120px;
+  }
+  #about .download .button-2 {
+    width: 180px;
   }
   #about .download .button:nth-child(2) {
     background-color: transparent;
@@ -62,8 +67,12 @@ const AboutSectionStyles = styled.div`
     }
     #about .download .button {
       font-size: 1.6rem;
-      height: 35px;
-      width: 210px;
+      max-height: 30px;
+      margin: auto;
+    }
+    #about .download .button-1 {
+      font-size: 1.5rem;
+      margin-right: 1rem;
     }
     #about .download p {
       margin-left: 1rem;
@@ -98,14 +107,14 @@ export default function AboutSection() {
               <div className="download">
                 <p>
                   <a
-                    href="https://drive.google.com/file/d/1DRyyUn8L_hlGLZftychvlcNeT3BXY2s4/view?usp=sharing"
-                    className="button"
+                    href="https://drive.google.com/file/d/1VJym4R-N36ZUiCPD_eoBbyvspfQL8fVl/view?usp=sharing"
+                    className="button button-1"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    My Resume
+                    My CV
                   </a>
-                  <Link to="/about" className="button">
+                  <Link to="/about" className="button button-2">
                     More About Me
                   </Link>
                 </p>

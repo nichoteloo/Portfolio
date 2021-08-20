@@ -46,7 +46,7 @@ const ProjectItemStyles = styled.div`
     transform: translateY(12%);
     margin-top: 1.5rem;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
   }
   .add-ons .left .repo-icon {
     margin-top: 1.5rem;
@@ -66,9 +66,10 @@ const ProjectItemStyles = styled.div`
     background-color: #ef5353;
     font-size: 1.4rem;
     margin: 0 1rem;
+    margin-top: 0.1rem;
     text-align: center;
     width: 32px;
-    height: 15px;
+    height: 14px;
     font-family: 'Montserrat-Bold';
     color: var(--black);
     border-radius: 4px;
@@ -78,9 +79,10 @@ const ProjectItemStyles = styled.div`
     background-color: #5be7a9;
     font-size: 1.4rem;
     margin: 0 1rem;
+    margin-top: 0.1rem;
     text-align: center;
     width: 36px;
-    height: 15px;
+    height: 14px;
     font-family: 'Montserrat-Bold';
     color: var(--black);
     border-radius: 4px;
@@ -97,7 +99,8 @@ const ProjectItemStyles = styled.div`
       font-size: 1.4rem;
     }
     .add-ons .right {
-      flex: 1.3;
+      flex: 2;
+      justify-content: flex-end;
     }
   }
 `;

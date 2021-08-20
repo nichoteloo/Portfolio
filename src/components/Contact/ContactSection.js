@@ -44,7 +44,7 @@ const ContactSectionStyle = styled.div`
     .contactSection__wrapper {
       flex-direction: column;
       margin: 10rem 3rem 0rem 3rem;
-      gap: 5rem;
+      gap: 3rem;
     }
     .contactSection__wrapper::after {
       display: none;
@@ -52,6 +52,9 @@ const ContactSectionStyle = styled.div`
     .left,
     .right {
       max-width: 100%;
+    }
+    .right {
+      margin-top: 3rem;
     }
   }
 `;

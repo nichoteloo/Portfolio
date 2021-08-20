@@ -106,6 +106,12 @@ const AboutPageStyle = styled.div`
         width: 250px;
       }
     }
+    .about__info .button-link {
+      font-size: 1.8rem;
+      height: 28px;
+      width: 100px;
+      padding: 5px;
+    }
   }
 `;
 
@@ -140,12 +146,12 @@ export default function About() {
               </PText>
               <div className="button">
                 <a
-                  href="https://drive.google.com/file/d/1DRyyUn8L_hlGLZftychvlcNeT3BXY2s4/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1VJym4R-N36ZUiCPD_eoBbyvspfQL8fVl/view?usp=sharing"
                   className="button-link"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  My Resume
+                  My CV
                 </a>
               </div>
             </div>

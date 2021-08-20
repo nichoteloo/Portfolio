@@ -41,6 +41,7 @@ const ProjectItemStyles = styled.div`
   .add-ons .right {
     flex: 1;
     display: flex;
+    justify-content: flex-end;
   }
   .add-ons .left .repo-icon {
     margin-left: 0.2rem;
@@ -86,7 +87,8 @@ const ProjectItemStyles = styled.div`
       width: 100%;
     }
     .add-ons .right {
-      flex: 1;
+      flex: 2;
+      justify-content: flex-end;
     }
   }
   @media only screen and (max-width: 368px) {
@@ -98,7 +100,8 @@ const ProjectItemStyles = styled.div`
       margin-right: 3.3rem;
     }
     .add-ons .right {
-      flex: 1.2;
+      flex: 2;
+      justify-content: flex-end;
       margin-right: 3.3rem;
     }
   }

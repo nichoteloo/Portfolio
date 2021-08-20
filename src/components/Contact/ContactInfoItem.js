@@ -23,7 +23,13 @@ const ItemStyles = styled.div`
     width: 2.5rem;
   }
   @media only screen and (max-width: 768px) {
-    gap: 3rem;
+    gap: 1rem;
+    svg {
+      width: 2rem;
+    }
+    .info {
+      margin-left: 2rem;
+    }
   }
 `;
 

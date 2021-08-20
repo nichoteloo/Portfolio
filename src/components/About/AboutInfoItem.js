@@ -7,7 +7,7 @@ const AboutItemStyle = styled.div`
   align-items: center;
   justify-conter: flex-start;
   position: relative;
-  margin-top: 3rem;
+  margin-top: 4rem;
   .title {
     font-size: 2.4rem;
   }
@@ -18,17 +18,20 @@ const AboutItemStyle = styled.div`
     left: 18rem;
   }
   .item {
-    background-color: var(--deep-dark);
+    background-color: var(--shades-blue-1);
     padding: 1rem;
     border-radius: 8px;
+    margin-right: 1rem;
   }
   @media only screen and (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 2rem;
     gap: 1rem;
     .items {
       position: initial;
       gap: 1rem;
+      max-width: 250px;
     }
     .title {
       font-size: 2rem;
